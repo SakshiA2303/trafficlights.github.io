@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(16, 16, 16);
+        }
+        #box{
+            width: 250px;
+            height: 500px;
+            margin: 100px 650px 100px 650px;
+            background-color: rgb(28, 27, 27);
+            border: 2px solid rgb(53, 52, 52);
+            border-radius: 10px;
+           }
+        .signal{
+            
+            width: 120px;
+            height: 120px;
+            margin-top: 25px;
+            margin-left: 65px;
+            border-radius: 50%;
+            animation-name: color;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 10s;
+            
+        }
+        #red{
+            box-shadow: 0px 0px 20px black inset;
+            background-image:radial-gradient(rgba(246, 47, 47, 0.4),transparent) ;
+            animation-name: redcolor;
+           }
+        #yellow{
+            box-shadow: 0px 0px 20px black inset;
+            background-image:radial-gradient(rgba(242, 242, 5, 0.406),transparent) ;
+            animation-name: yellowc;
+        }
+        #green{
+            box-shadow: 0px 0px 20px black inset;
+            background-image:radial-gradient(rgb(54, 99, 54),transparent) ;
+            animation-name: greenc;
+           }
+        @keyframes redcolor{
+            0%{background-color:red; opacity: 1;box-shadow: 0px 0px 25px red;}
+            20%{ background-color:red;opacity: 1;box-shadow: 0px 0px 25px red;}
+            40%{background-color:red;opacity: 0.1;}
+            60%{background-color:red;opacity: 0.1;}
+            80%{background-color:red;opacity: 0.1;}
+            100%{background-color:red;opacity: 0.1;}
+        }
+        @keyframes yellowc{
+            0%{background-color: yellow;opacity: 0.1;}
+            20%{ background-color:rgb(251, 255, 0);opacity: 0.1;}
+            40%{background-color:yellow;opacity: 1;box-shadow: 0px 0px 25px yellow;}
+            60%{background-color:yellow;opacity: 1;box-shadow: 0px 0px 25px yellow;}
+            80%{background-color:yellow;opacity: 0.1;}
+           100%{ background-color:rgb(255, 251, 0);opacity: 0.1;}
+            }
+            @keyframes greenc{
+            0%{background-color:green ;opacity: 0.1;}
+            20%{ background-color:green;opacity: 0.1;}
+            40%{background-color:green;opacity: 0.1;}
+            60%{background-color:green;opacity: 0.1;}
+            80%{background-color:green;opacity: 1;box-shadow: 0px 0px 25px green ;}
+           100%{ background-color:green;opacity: 1;box-shadow: 0px 0px 25px green;}
+
+            }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="signal" id="red"></div>
+        <div class="signal" id="yellow"></div>
+        <div class="signal" id="green"></div>
+    </div>
+    
+</body>
+</html>
